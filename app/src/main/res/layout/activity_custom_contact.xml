@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_custom_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp">
+
+            <com.drava.android.ui.DravaTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:text="@string/str_get_phone_no"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaEditText
+                    android:id="@+id/txt_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:text="+ 60 "/>
+
+                <com.drava.android.ui.DravaEditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:maxLength="14"
+                    android:layout_toRightOf="@+id/txt_code"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlv_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_email_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:text="@string/str_get_email"/>
+
+                <com.drava.android.ui.DravaEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:layout_below="@id/txt_email_label"/>
+
+            </RelativeLayout>
+
+            <com.drava.android.ui.DravaButton
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/str_continue"
+                android:textColor="@android:color/white"
+                android:textAllCaps="true"
+                android:fontFamily="@string/roboto_regular"
+                android:textStyle="bold"
+                android:background="@drawable/button_bg"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_get_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <include layout="@layout/default_toolbar"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_invite_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:text="@string/str_invite_friends"
+            android:textColor="@color/color_light_text"
+            android:fontFamily="@string/roboto_medium"/>
+
+        <RelativeLayout
+            android:id="@+id/rlv_invite_icons"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/img_mobile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:contentDescription="@string/app_name"
+                android:layout_toLeftOf="@+id/img_email"
+                android:layout_toStartOf="@+id/img_email"
+                android:src="@drawable/mobile"
+                android:background="@drawable/selector_contacts_btn"/>
+
+            <ImageButton
+                android:id="@+id/img_email"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/email"
+                android:background="@drawable/selector_contacts_btn"/>
+
+            <ImageButton
+                android:id="@+id/img_custom"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/img_email"
+                android:layout_toEndOf="@id/img_email"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/plus"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_contacts_btn"/>
+
+            <ImageButton
+                android:id="@+id/img_Invite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/img_custom"
+                android:layout_toEndOf="@id/img_custom"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pending"
+                android:background="@drawable/selector_contacts_btn"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlv_invite_icons_divider"
+            android:layout_width="match_parent"
+            android:layout_height="7dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/color_light_grey_line"/>
+
+            <ImageView
+                android:id="@+id/img_arrow_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_arrow_email"
+                android:layout_marginRight="62dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/arrow"/>
+
+            <ImageView
+                android:id="@+id/img_arrow_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/arrow"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlv_invite_icons"/>
+
+        <RelativeLayout
+            android:id="@+id/data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/txt_no_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_light_text"
+                android:textSize="18sp"
+                android:text="@string/str_no_contacts_found"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tutorial_get_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@drawable/tut_invite_without_header"
+        android:visibility="visible"/>
+
+</FrameLayout>

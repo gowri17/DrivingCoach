@@ -1,0 +1,266 @@
+<resources>
+    <string name="app_name">DraVA</string>
+    <string name="press_again_to_exit">Please press back again to exit.</string>
+    <string name="choose_one">Choose one</string>
+    <string name="check_your_internet_connection">Check your Internet Connection</string>
+    <!--<string name="facebook_app_id">526814780850733</string>-->
+    <string name="facebook_app_id">208730906259599</string>
+    <string name="denied_title">Unable to get %s</string>
+    <string name="denied_msg">You have denied the permission for getting %s access.. Please go to app settings and allow permission</string>
+    <string name="inapp_billing_api_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuBogXJapisB1TMUIz/a90DhyvLbD8mnXhfNafk0YRsHahzbboE2i2jjIx1mpw1N0f5wgqHXH1/bANP+WnW9dU3LgG6t2TAagxCvDHFCKE8vvnQ93JmV/oBvLUMxwjU1FerCqgbftIfYalWp1iFR7Ke2rR5wdzN73R6CpWTcg4uu2PQ+KBpGeDkHV8Erz8DLsfRr5YmY1lnX/8f+WJtQEnHG3OKFX6XyqbkH6jPg201hz+SBP9Yop8bbVp1FTLFbqIB1egAiuSGi3usoOd3B4Y5nGqkR3XXLWIlV00IWG/zHtjubODF1dRs5ta5mMe3a+rNfdm2q0cseEq7TVTuNo3QIDAQAB</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_here">Sign In Here</string>
+    <string name="sign_in_content">signing with social is quickest:no extra password to \n remember - no brain fail</string>
+    <string name="sign_in_new_content">Hassle free sign in using your social media accounts.</string>
+    <string name="sign_in_facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="sign_in_google">SIGN IN WITH GOOGLE+</string>
+    <string name="sign_in_linkedin">SIGN IN WITH LINKEDIN</string>
+    <string name="sign_in_instagram">SIGN IN WITH INSTAGRAM</string>
+    <string name="sign_in_terms_of_service">by *Sign up* agree to our Privacy policy &amp; Terms of Service</string>
+    <string name="str_by_signing_in">By Signing in you agree to </string>
+    <string name="str_construction">Page Under Construction</string>
+    <string name="str_skip">Skip</string>
+    <string name="str_invite_friends">Invite your family, friends and associates</string>
+    <string name="str_phone_no">Phone Number</string>
+    <string name="str_email_id">Email Id</string>
+    <string name="str_enter_user_details">Enter Email id</string>
+    <string name="str_get_phone_no">Your country code and phone number</string>
+    <string name="str_get_email">Your e-mail address</string>
+    <string name="str_continue">Continue</string>
+    <string name="str_search_user">Search User</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="str_signin_alert">SignIn Alert</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="version">Powered by DraVa - V\u0020</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Left Menu Items -->
+    <string name="str_home">Home</string>
+    <string name="str_trips">Trips</string>
+    <string name="str_my_mentees">My Mentees</string>
+    <string name="str_mentor">My Mentors</string>
+    <string name="str_profile">My Profile</string>
+    <string name="str_notification">Notification</string>
+    <string name="str_settings">Settings</string>
+    <string name="str_terms">Terms Of Service</string>
+    <string name="str_violation">Violation</string>
+    <string name="str_invite">Invite</string>
+    <string name="str_privacy">Privacy</string>
+    <string name="str_about">About</string>
+    <string name="str_version">Version</string>
+    <string name="str_signout">Sign Out</string>
+
+    <string name="log_in">Already have an account?</string>
+    <string name="str_by_using">By Using this app you agree to</string>
+    <string name="str_login">Log In</string>
+    <string name="str_terms_of_use">Term of Use</string>
+    <string name="str_privacy_policy">Privacy Policy</string>
+    <string name="get_started">GET STARTED</string>
+    <string-array name="welcome_description">
+        <item>DraVA combines easy-to-use technology and smart data science to make it easier for people to become safer drivers.
+            For the first time drivers are empowered with real world driving behaviour data and insight to become safer drivers.
+        </item>
+        <item>This is a must have app for parents with teens who are just starting to drive.
+            Teen drivers get access to critical driving behaviour data to enable them to become safer drivers.
+            Parents get the peace of mind of knowing their teens are driving safely.
+        </item>
+        <item>In the near future, safe drivers in Malaysia will have the opportunity to enjoy lower car insurance premiums.
+        </item>
+        <item>DraVA is the perfect solution for parents/guardians who want to help their teens improve their driving skills.
+            Parents/guardians can easily access the teen driver\'s performance with detailed bad driving behaviour information.
+        </item>
+        <item>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+            was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </item>
+        <item>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here,
+            content here\', making it look like readable English.
+        </item>
+    </string-array>
+    <string name="i_want_to_be_a">I want to be a</string>
+    <string name="im_mentor">Mentor</string>
+    <string name="im_mentee">Mentee</string>
+    <string name="profile_mentor_desc">The mentor role is suitable for parents who want to help their teens improve their driving skill
+    </string>
+    <string name="profile_mentee_desc">The mentee role is suitable for teens who want to improve their driving skills</string>
+    <string name="let_your_referral">Let your referral earn credits</string>
+    <string name="enter_referal_code">Enter the referral code</string>
+    <string name="cont">continue</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="profile">Profile</string>
+    <string name="invite_mentees">Invite Mentees</string>
+    <string name="invite_mentees_description">Promote safe driving among your family, friends and associates. Invite them to share their
+        driving patterns with you using the DraVA app.
+    </string>
+    <string name="invite_mentor_description">The mentor plays a key role in helping a mentee improve their driving skills. Invite a mentor
+        to guide you through this journey.
+    </string>
+    <string name="invite">Invite</string>
+    <string name="str_invite_mentor">Invite Mentors</string>
+    <string name="link_seamlessly_to_multiple_mentees">Link seamlessly to multiple mentees</string>
+    <string name="see_driving_expections">See driving expections</string>
+    <string name="get_notified">Get notified of expections in realtime manner</string>
+    <string name="view_driver_scores">View driver scores - driving behaviour assessment</string>
+    <string name="view_trips_taken">View trips taken</string>
+
+    <string name="enter_mentor_code_received_in_mail">Enter the mentor code you received in mail</string>
+    <string name="enter_mentor_code">Enter the mentor code</string>
+    <string name="promote_safe_driving_among_family">Promote save driving among your family,friends,and associates.</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="your_almost_done">you\'re almost done</string>
+    <string name="invite_mentor">Invite Mentors</string>
+    <string name="link_with_your_mentor">Link with your mentor</string>
+
+    <string name="view_profile">View Profile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_trips">View Trips</string>
+    <string name="view_on_maps">View On Map</string>
+    <string name="remove_mentee">Remove Mentee</string>
+    <string name="remove_mentor">Remove Mentor</string>
+    <string name="mentor_code">Mentor Code</string>
+
+    <string name="str_notinapp">Not in App</string>
+    <string name="str_already_mentor">Already Mentor</string>
+    <string name="str_already_mentee">Already Mentee</string>
+    <string name="str_my_mentor">My Mentor</string>
+    <string name="str_my_mentee">My Mentee</string>
+    <string name="str_invitation_sent">Invitation Sent!</string>
+    <string name="str_invitation_mentee_content">Invitation have been sent to your mentee. You will be notified when your mentee joins the
+        DraVA app.
+    </string>
+    <string name="str_invitation_mentor_content">Invitation has been sent to your mentor. You will be notified when your mentor successfully
+        links with you on DraVA.
+    </string>
+    <string name="str_ok_gotit">OK, GOT IT</string>
+    <string name="gps_alert_message">Your GPS seems to be disabled, you must enable GPS to continue.</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="page_under_construction">Page under construction…</string>
+    <string name="mentor_you_invite">The mentor you invite will be:</string>
+    <string name="seamlessly_linked_to_you">Seamlessly linked to you</string>
+    <string name="see_your_driving_exception">See your driving exceptions</string>
+    <string name="get_notified_of_your_driving">Get notified of your driving exceptions in realtime</string>
+    <string name="be_able_to_view_your_safety_scores">Be able to view your safety scores</string>
+    <string name="be_able_to_view_your_trip_history">Be able to view your trip history</string>
+    <string name="invite_a_mentor">Invite a mentor</string>
+    <string name="str_done">Done</string>
+    <string name="str_no_contacts_found">No Contacts Found</string>
+    <string name="str_enter_referal">Enter referral code</string>
+    <string name="str_invited">Invited</string>
+    <string name="str_reinvite">Re-invite</string>
+    <string name="loading">Loading…</string>
+    <string name="invite_alert">Invite Alert</string>
+    <string name="remove_alert">Are sure you want to remove %s?</string>
+
+    <string name="str_already_invited">Already Invited</string>
+    <string name="str_no_need_to_invite">No Need to Invite</string>
+    <string name="str_rejected">str_rejected</string>
+    <string name="speed_reached_alert">You have reached maximum speed of this zone&#8230;</string>
+    <string name="your_speed">Your Speed : %s kph</string>
+    <string name="max_speed">Max Speed : %s km/h</string>
+    <string name="str_violations">Violations</string>
+    <string name="no_location">No Address</string>
+    <string name="no_mentees_found">No Mentees Found</string>
+    <string name="str_mentees">MENTEES</string>
+    <string name="str_distance_away">DISTANCE AWAY</string>
+    <string name="speed_limit_exceeded">Speed Limit Exceeded</string>
+
+    <string name="about_me">About Me</string>
+    <string name="overall_score">Overall Score</string>
+    <string name="my_mentors">My Mentors</string>
+    <string name="referral_points">Referral Points</string>
+    <string name="my_profile">My Profile</string>
+    <string name="points">\u0020points </string>
+    <string name="points_earned">\u0020points earned</string>
+    <string name="txt_notification">NOTIFICATION</string>
+    <string name="mentee_turned_off_phone">Mentee turned off phone</string>
+    <string name="mentee_turned_off_gps">Mentee turned off GPS</string>
+    <string name="str_powered_by">Powered By:</string>
+
+    <string name="fifteenmins">15mins </string>
+    <string name="thirtymins">30mins</string>
+    <string name="onehrs">1hrs</string>
+    <string name="twohrs">2hrs</string>
+    <string name="threehrs">3hrs</string>
+    <string name="fourhrs">4hrs</string>
+    <string name="fivehrs">5hrs</string>
+    <string name="sixhrs">6hrs</string>
+    <string name="sevenhrs">7hrs</string>
+    <string name="eighthrs">8hrs</string>
+
+    <string name="str_mentee_profile">Mentee Profile</string>
+    <string name="str_mentor_profile">Mentor Profile</string>
+    <string name="str_ventee_address">Ventee Address</string>
+    <string name="str_this_month">THIS MONTH</string>
+    <string name="str_overall_month">OVERALL</string>
+    <string name="str_total_score">TOTAL SCORE</string>
+    <string name="str_overall_score">OVERALL SCORE</string>
+    <string name="str_max_speed">MAX SPEED</string>
+    <string name="str_max_speed_unit">km/h</string>
+    <string name="str_label_violations">VIOLATIONS</string>
+    <string name="str_label_time">TIME</string>
+    <string name="str_label_Distance">DISTANCE</string>
+    <string name="str_distance_unit">km</string>
+    <string name="str_time_unit_hr">h</string>
+    <string name="str_minute">m</string>
+    <string name="str_no_record_found">No Record Found !!!</string>
+    <string name="str_load_more">Loading more items please wait…</string>
+    <string name="share_on_facebook">Share on facebook</string>
+    <string name="facebook_content">From : %s        To: </string>
+    <string name="passenger">Passenger</string>
+    <string name="str_about_us">DraVA combines easy-to- use technology and smart data science to make it easier for people to become
+safer drivers. For the first time, drivers are empowered with real world driving behaviour data and
+insight to become safer drivers. User can use DraVA to monitor their own driving styles or assign
+another individual as a mentor. The assigned mentor will be able to view your trip details.\n\n
+Our mentor mentee function is specifically targeted at parents with teen drivers. This is a must have app
+for parents with teens who are just starting to drive. Teen drivers get access to critical driving behaviour
+data to enable them to become safer drivers. Parents get the peace of mind of knowing their teens are
+driving safely.\n\n
+In the near future, safe drivers in Malaysia will have the opportunity to enjoy lower car insurance
+premiums. Users who opt to purchase their insurance with DraVA will be able to enjoy periodic rebates
+based on they achieving a certain safety score.\n\n
+DraVA app and website (www.drava.biz) are owned and operated by ChangeDynamics Technologies Sdn
+
+Bhd. For any inquiries please contact info@drava.biz.</string>
+    <string name="road_api_key">AIzaSyCaJwVweceuqqwEbhXHAbznTBMLkVYzkFM</string>
+    <string name="tap_on_violations_to_view_details">Tap on Violations to view details</string>
+    <string name="str_signout_again">Trip not Ended, Please reset the internet connection</string>
+    <string name="str_no_notification_found">No Notifications Found</string>
+    <string name="facebook_not_installed">Sorry, Facebook app is not installed !\nInstall Facebook to share</string>
+    <string name="str_confirm_alert">Confirm Alert</string>
+    <string name="str_credit_usage">Credit Usage</string>
+    <string name="str_consume_credit_alert">Following action will consume one credit point, Do you want to continue?</string>
+    <string name="str_delelte_notifications">Are you sure to delete Notification</string>
+    <string name="str_no_location">Mentee Location not available</string>
+    <string name="str_invite_accept_decline">User is already mentor, You cannot process a mentor.</string>
+    <string name="mentee_force_quit_app">Mentee force quit App</string>
+
+    <string name="minute_ago">%d minute ago</string>
+    <string name="minutes_ago">%d minutes ago</string>
+    <string name="year_ago">%d year ago</string>
+    <string name="years_ago">%d years ago</string>
+    <string name="month_ago">%d month ago</string>
+    <string name="months_ago">%d months ago</string>
+    <string name="week_ago">%d week ago</string>
+    <string name="weeks_ago">%d weeks ago</string>
+    <string name="day_ago">%d day ago</string>
+    <string name="days_ago">%d days ago</string>
+    <string name="hour_ago">%d hour ago</string>
+    <string name="hours_ago">%d hours ago</string>
+    <string name="second_ago">%d second ago</string>
+    <string name="seconds_ago">%d seconds ago</string>
+    <string name="just_now">Just now</string>
+    <string name="one_minute_ago">1 minute ago</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="at">at</string>
+    <string name="date_format_diaporama">M/d/yyyy</string>
+    <string name="list_time_format">hh:mm</string>
+    <string name="time_format">h:mm aa</string>
+</resources>

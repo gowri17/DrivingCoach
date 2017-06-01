@@ -1,0 +1,14 @@
+﻿<resources>
+    <string name="app_name">SDC</string>
+    <string name="facebook_app_id">1788211811499484</string>
+    <string name="invite_mentees_description">Promote safe driving among your family, friends and associates. Invite them to share their
+        driving patterns with you using the SDC app.
+    </string>
+    <string name="str_invitation_mentee_content">Invitation have been sent to your mentee. You will be notified when your mentee joins the
+        SDC app.
+    </string>
+    <string name="str_invitation_mentor_content">Invitation has been sent to your mentor. You will be notified when your mentor successfully
+        links with you on SDC.
+    </string>
+    <string name="inapp_billing_api_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1OQRi/cJona7yQZoecjO1hjGTStzdd877U3gM7X4P47fyo5LgvN8Bqo5Yc4YI8dkZcRI2Vf0rZjK4snuN4aLUc/IIYq+LwpOuFqS3ulQ0NsgW2zPc444DEMTS+9Bfpw3KY95Z82A2Bqr/VEnPuhHDYy1iYHOsb5wamCGzERcMF5TcouDhX241id2ip5ZO399LDLWJm6BnafwhAID13wUybx6cO3pksaErpuYXQ9v3VQbPg7gxgd3Dw/D14hFbmtyFvCOqOu6EjFFByGlZ7ys+UgLbQjU25qHn5vQJ/vK1P4G0KjZh0dreJxP8o8NBgDPpIOX8d4vj7hCxfw+lDfnMwIDAQAB</string>
+</resources>

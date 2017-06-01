@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MenteeProfile.MonthFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/monthFragmentLayout"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/view_driver_score" />
+
+    <com.drava.android.ui.DravaTextView
+        android:id="@+id/txtviewTotalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black"
+        android:textSize="26sp" />
+
+    <com.drava.android.ui.DravaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/str_total_score"
+        android:textSize="@dimen/mediumtextsize"
+        android:textColor="@color/txtgrey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borderline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtlabelmaxspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mediumtextsize"
+                android:layout_toEndOf="@+id/imgviewmaxspeed"
+                android:layout_toRightOf="@+id/imgviewmaxspeed"
+                android:text="@string/str_max_speed"
+                android:textColor="@color/txtgrey" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtviewMaxSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtlabelmaxspeed"
+                android:layout_gravity="bottom"
+                android:layout_toEndOf="@+id/imgviewmaxspeed"
+                android:layout_toRightOf="@+id/imgviewmaxspeed"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_black"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imgviewmaxspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/meter"
+                tools:ignore="RtlSymmetry" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/labelMaxspeedUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtviewMaxSpeed"
+                android:layout_toEndOf="@+id/txtviewMaxSpeed"
+                android:layout_toRightOf="@+id/txtviewMaxSpeed"
+                android:padding="5dp"
+                android:textSize="@dimen/smalltextsize"
+                android:text="@string/str_max_speed_unit"
+                android:textColor="@color/txtgrey" />
+
+        </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/borderline" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtlabelViolation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imgviewViolation"
+                android:layout_toRightOf="@+id/imgviewViolation"
+                android:textSize="@dimen/mediumtextsize"
+                android:text="@string/str_label_violations"
+                android:textColor="@color/txtgrey" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtviewViolation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtlabelViolation"
+                android:layout_gravity="bottom"
+                android:layout_toEndOf="@+id/imgviewViolation"
+                android:layout_toRightOf="@+id/imgviewViolation"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_black"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imgviewViolation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/trip_violate_count_icon" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borderline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtlabelTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imgviewTime"
+                android:layout_toRightOf="@+id/imgviewTime"
+                android:textSize="@dimen/mediumtextsize"
+                android:text="@string/str_label_time"
+                android:textColor="@color/txtgrey" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtviewTimeHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtlabelTime"
+                android:layout_gravity="bottom"
+                android:layout_toEndOf="@+id/imgviewTime"
+                android:layout_toRightOf="@+id/imgviewTime"
+                android:textColor="@color/color_black"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imgviewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_duration"
+                tools:ignore="RtlSymmetry" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/labelTimehr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtviewTimeHour"
+                android:layout_toEndOf="@+id/txtviewTimeHour"
+                android:layout_toRightOf="@+id/txtviewTimeHour"
+                android:padding="5dp"
+                android:textSize="@dimen/smalltextsize"
+                android:text="@string/str_time_unit_hr"
+                android:textColor="@color/txtgrey" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtviewTimeMinute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtlabelTime"
+                android:layout_gravity="bottom"
+                android:layout_toEndOf="@+id/labelTimehr"
+                android:layout_toRightOf="@+id/labelTimehr"
+                android:singleLine="true"
+                android:textColor="@color/color_black"
+                android:textSize="26sp" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/labelTimeMinute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtviewTimeHour"
+                android:layout_toEndOf="@+id/txtviewTimeMinute"
+                android:layout_toRightOf="@+id/txtviewTimeMinute"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/smalltextsize"
+                android:paddingStart="5dp"
+                android:text="@string/str_minute"
+                android:textColor="@color/txtgrey" />
+
+        </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/borderline" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtlabelDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imgviewDistance"
+                android:layout_toRightOf="@+id/imgviewDistance"
+                android:textSize="@dimen/mediumtextsize"
+                android:text="@string/str_label_Distance"
+                android:textColor="@color/txtgrey" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txtviewDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtlabelDistance"
+                android:layout_gravity="bottom"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_toEndOf="@+id/imgviewDistance"
+                android:layout_toRightOf="@+id/imgviewDistance"
+                android:textColor="@color/color_black"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/imgviewDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/view_trip_taken"
+                tools:ignore="RtlSymmetry" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/labelDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtviewDistance"
+                android:layout_toEndOf="@+id/txtviewDistance"
+                android:layout_toRightOf="@+id/txtviewDistance"
+                android:textSize="@dimen/smalltextsize"
+                android:padding="5dp"
+                android:text="@string/str_distance_unit"
+                android:textColor="@color/txtgrey" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/borderline" />
+
+
+    <com.drava.android.ui.DravaButton
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnViewTrips"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/view_trips"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_no_record_found"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:text="@string/str_no_record_found"/>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

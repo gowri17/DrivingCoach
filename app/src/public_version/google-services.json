@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1086644501694",
+    "firebase_url": "https://drava-266fe.firebaseio.com",
+    "project_id": "drava-266fe",
+    "storage_bucket": "drava-266fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086644501694:android:d55c3954266bb7ab",
+        "android_client_info": {
+          "package_name": "com.drava.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086644501694-kbsdrq26419k1b6dabpf6ps79rrqspen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drava.android",
+            "certificate_hash": "2C8F3CD564C202D1CB127D42ED3F11C0B86B9F0F"
+          }
+        },
+        {
+          "client_id": "1086644501694-ro7chehik1spcnplbd88v1qgctj6eahs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drava.android",
+            "certificate_hash": "A8337EAC6F60783DB0A3DD5396486FD0A0DAEEE4"
+          }
+        },
+        {
+          "client_id": "1086644501694-4r9m3t9e99ic2n38hnle07bgq2ea2t16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8nDgMoGyVo1mRPTHs1qNj0XA_IWHuGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086644501694-4r9m3t9e99ic2n38hnle07bgq2ea2t16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

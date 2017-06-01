@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/top_group">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/fb"
+            android:title="@string/str_home" />
+        <item
+            android:id="@+id/nav_trips"
+            android:icon="@drawable/fb"
+            android:title="@string/str_trips"/>
+        <item
+            android:id="@+id/nav_violation"
+            android:icon="@drawable/fb"
+            android:title="@string/str_violation" />
+        <item
+            android:id="@+id/nav_mentor"
+            android:icon="@drawable/fb"
+            android:title="@string/str_mentor" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/fb"
+            android:title="@string/str_profile" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/fb"
+            android:title="@string/str_invite" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/fb"
+            android:title="@string/str_settings" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/middle_group">
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/fb"
+            android:title="@string/str_terms" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/fb"
+            android:title="@string/str_privacy" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/fb"
+            android:title="@string/str_about" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/bottom_group">
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/fb"
+            android:title="@string/str_signout" />
+    </group>
+</menu>

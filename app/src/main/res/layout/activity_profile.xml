@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/default_toolbar" />
+
+    <com.drava.android.ui.DravaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_want_to_be_a"
+        android:layout_gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_mentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_mentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mentor_selector"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_mentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/im_mentor"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <com.drava.android.ui.DravaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_mentor_desc"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:id="@+id/ll_mentee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_mentee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mentee_selector"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_mentee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/im_mentee"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <com.drava.android.ui.DravaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_mentee_desc"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

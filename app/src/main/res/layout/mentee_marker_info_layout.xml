@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_base_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/location_marker_blue_info">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:padding="5dp">
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_view_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Trip"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_toLeftOf="@id/txt_view_trips"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_user_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/txt_view_trips"
+            android:layout_below="@id/txt_user_name"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+</LinearLayout>

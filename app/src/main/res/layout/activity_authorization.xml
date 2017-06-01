@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_authorization"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/default_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_sign_in_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_here"
+                android:textSize="20sp"
+                android:textColor="@color/color_black_text"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@string/roboto_light"
+                android:visibility="gone"/>
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_sign_in_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_new_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_black_text"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:fontFamily="@string/roboto_light"/>
+
+            <LinearLayout
+                android:id="@+id/lnr_media_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnr_layout_fb"
+                    android:orientation="horizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/sign_in_fb_btn_bg">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/fb"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/app_name"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <com.drava.android.ui.DravaTextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in_facebook"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:padding="15dp"
+                        android:fontFamily="@string/roboto_medium"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnr_layout_google_plus"
+                    android:orientation="horizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/sign_in_gp_btn_bg">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/google"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/app_name"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                    <com.drava.android.ui.DravaTextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in_google"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:padding="15dp"
+                        android:fontFamily="@string/roboto_medium"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnr_layout_linkedin"
+                    android:orientation="horizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/sign_in_linkedin_btn_bg">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/in"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/app_name"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                    <com.drava.android.ui.DravaTextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in_linkedin"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:padding="15dp"
+                        android:fontFamily="@string/roboto_medium"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnr_layout_instagram"
+                    android:orientation="horizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/sign_in_instagram_btn_bg">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/insta"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/app_name"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                    <com.drava.android.ui.DravaTextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in_instagram"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:padding="15dp"
+                        android:fontFamily="@string/roboto_medium"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_terms_of_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_by_signing_in"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/color_black_text"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@string/roboto_light"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_terms_of_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_terms_of_use"
+                    android:textColor="@color/color_terms"
+                    android:textSize="16sp"
+                    android:clickable="true"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_private_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/txt_terms_of_use"
+                    android:text="@string/str_privacy_policy"
+                    android:textColor="@color/color_terms"
+                    android:textSize="16sp"
+                    android:clickable="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

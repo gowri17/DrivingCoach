@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- android:fontFamily="sans-serif"           // roboto regular
+     android:fontFamily="sans-serif-light"     // roboto light
+     android:fontFamily="sans-serif-condensed" // roboto condensed
+     android:fontFamily="sans-serif-thin"      // roboto thin (android 4.2)
+     android:fontFamily="sans-serif-medium"-->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+</resources>

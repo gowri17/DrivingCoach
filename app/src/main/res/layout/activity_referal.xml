@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/default_toolbar" />
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_title_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/let_your_referral"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_mentor_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_mentor_code_received_in_mail"
+            android:textSize="14sp"
+            android:textColor="@color/color_gray_light_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gift"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_referal_code"
+            android:textSize="14sp"
+            android:textColor="@color/color_gray_light_text"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <com.drava.android.ui.DravaEditText
+                android:id="@+id/edt_referal_code"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:imeOptions="actionDone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/cont"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:background="@drawable/referral_bg"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlv_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rlv_invite_status"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true">
+
+            <com.drava.android.ui.DravaButton
+                android:visibility="visible"
+                android:id="@+id/btn_invite"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:text="@string/str_invite"
+                android:textColor="@color/color_theme"
+                android:fontFamily="@string/roboto_regular"
+                android:background="@drawable/contacts_invite_btn"/>
+
+            <com.drava.android.ui.DravaTextView
+                android:visibility="visible"
+                android:id="@+id/txt_invite"
+                android:layout_below="@id/btn_invite"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/color_red"
+                android:fontFamily="@string/roboto_regular"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlv_user_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/rlv_invite_status"
+            android:layout_toStartOf="@id/rlv_invite_status"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user"
+                android:background="@drawable/contacts_btn_normal_bg"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_centerInParent="true">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="18sp"
+                    android:text="@string/app_name"
+                    android:fontFamily="@string/roboto_light"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_light_text"
+                    android:layout_below="@+id/name"
+                    android:textSize="12sp" />
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_user_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/data"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_light_bg"
+        android:layout_below="@id/rlv_info_layout"/>
+</RelativeLayout>

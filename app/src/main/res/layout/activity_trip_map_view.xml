@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rl_root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="14.5">
+
+    <include layout="@layout/default_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+
+        <fragment
+            android:id="@+id/fragment_map"
+            class="com.drava.android.activity.map.maputils.TouchableMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_trip_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaeeeeee"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="September 28, 2016"
+            android:textColor="#787878"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_violation_details"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#aaeeeeee"
+            android:padding="2dp">
+
+            <com.drava.android.ui.DravaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Tap on Violations to view details" />
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:src="@android:drawable/ic_delete" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <com.drava.android.ui.DravaTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:drawableBottom="@drawable/trip_start_map_icon"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="Start"
+                android:textSize="12sp" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_trip_start_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="12:45"
+                android:textSize="16sp" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_trip_start_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:text="25 Jalan Ampang, 50450 Kuala Lumpur"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <com.drava.android.ui.DravaTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:drawableBottom="@drawable/trip_end_map_icon"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="End"
+                android:textSize="12sp" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_trip_end_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="12:45"
+                android:textSize="16sp" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_trip_end_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:text="25 Jalan Ampang, 50450 Kuala Lumpur"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9F9F9F" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="#fff"
+        android:gravity="center"
+        android:weightSum="3">
+
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_trip_violate_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/trip_violate_count_icon"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="2"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:background="#9F9F9F" />
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_trip_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/ic_duration"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:background="#9F9F9F" />
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_trip_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:drawableTop="@drawable/view_trip_taken"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="140.6 km"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9F9F9F" />
+
+    <com.drava.android.ui.DravaTextView
+        android:id="@+id/txt_share_on_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sign_in_fb_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:text="@string/share_on_facebook"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

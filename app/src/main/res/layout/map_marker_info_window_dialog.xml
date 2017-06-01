@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_base_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/map_info_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_article_type"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="4dp"
+            android:layout_gravity="start|center"
+            android:src="@drawable/default_image"/>
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:minWidth="50dp"
+            android:maxWidth="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_address"
+        android:minWidth="50dp"
+        android:maxWidth="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txt_location"
+        android:minWidth="50dp"
+        android:maxWidth="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

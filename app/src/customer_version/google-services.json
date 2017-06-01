@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "1086644501694",
+    "firebase_url": "https://drava-266fe.firebaseio.com",
+    "project_id": "drava-266fe",
+    "storage_bucket": "drava-266fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086644501694:android:d55c3954266bb7ab",
+        "android_client_info": {
+          "package_name": "com.drava.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086644501694-kbsdrq26419k1b6dabpf6ps79rrqspen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drava.android",
+            "certificate_hash": "2c8f3cd564c202d1cb127d42ed3f11c0b86b9f0f"
+          }
+        },
+        {
+          "client_id": "1086644501694-ro7chehik1spcnplbd88v1qgctj6eahs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.drava.android",
+            "certificate_hash": "a8337eac6f60783db0a3dd5396486fd0a0daeee4"
+          }
+        },
+        {
+          "client_id": "1086644501694-4r9m3t9e99ic2n38hnle07bgq2ea2t16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8nDgMoGyVo1mRPTHs1qNj0XA_IWHuGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086644501694-4r9m3t9e99ic2n38hnle07bgq2ea2t16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086644501694:android:73cb4cb6c56fda5b",
+        "android_client_info": {
+          "package_name": "com.sdc.coachingcenter.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086644501694-ut18fd4ru1jlgf9r893drksbtm1sf9fn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sdc.coachingcenter.android",
+            "certificate_hash": "2c8f3cd564c202d1cb127d42ed3f11c0b86b9f0f"
+          }
+        },
+        {
+          "client_id": "1086644501694-5akf5lnumu0e2k46bu3o4us07lkqogfg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sdc.coachingcenter.android",
+            "certificate_hash": "a8337eac6f60783db0a3dd5396486fd0a0daeee4"
+          }
+        },
+        {
+          "client_id": "1086644501694-4r9m3t9e99ic2n38hnle07bgq2ea2t16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8nDgMoGyVo1mRPTHs1qNj0XA_IWHuGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086644501694-4r9m3t9e99ic2n38hnle07bgq2ea2t16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

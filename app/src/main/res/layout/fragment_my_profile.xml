@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/mentee_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/mentee_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_image" />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000"/>
+
+        <com.drava.android.ui.DravaTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:textColor="@color/color_white"
+            android:textSize="22sp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_above="@+id/rlv_location_layout"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rlv_location_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_marker"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/location"
+                android:layout_toLeftOf="@+id/txt_location"
+                android:layout_alignParentTop="true"/>
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_location"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/MyProfileToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/mentee_profile_menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_menu_white"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/menu_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mentee_profile_menu_icon"
+                    android:paddingLeft="8dp"
+                    android:text="@string/my_profile"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mentee_profile_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_about_me"
+                style="@style/MenteeProfileText"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:text="@string/about_me"
+                android:visibility="gone"/>
+
+            <View style="@style/bottomline"
+                android:id="@+id/about_me_bottom_line"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_overall_Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/label_overall_score"
+                    style="@style/MenteeProfileTextWithSub"
+                    android:maxLines="1"
+                    android:text="@string/overall_score" />
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_overall_score"
+                    style="@style/MenteeSubText"
+                    android:layout_below="@+id/label_overall_score" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_right_arrow"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_overall_score"
+                    android:layout_marginTop="10dp"
+                    android:background="#E8E8E8" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_mentor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_my_mentor"
+                    style="@style/MenteeProfileText"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:maxLines="1"
+                    android:text="@string/my_mentors" />
+
+                <View style="@style/bottomline" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_referral_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/label_referral_point"
+                    style="@style/MenteeProfileTextWithSub"
+                    android:maxLines="1"
+                    android:text="@string/referral_points" />
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_referral_point"
+                    style="@style/MenteeSubText"
+                    android:layout_below="@+id/label_referral_point" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_right_arrow"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

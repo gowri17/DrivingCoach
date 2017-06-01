@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_view_mentor_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_toolbar"/>
+
+    <!--<RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_mentor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/img_mentor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_label_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="First Name : "
+                    android:padding="3dp"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14sp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_label_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Last Name : "
+                    android:padding="3dp"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14sp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_label_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Address      : "
+                    android:padding="3dp"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14sp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_mentor"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_label_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="First Name : "
+                    android:padding="3dp"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14sp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_label_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Last Name : "
+                    android:padding="3dp"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14sp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_label_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Address      : "
+                    android:padding="3dp"/>
+
+                <com.drava.android.ui.DravaTextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_dark_color"
+                    android:textSize="14sp"
+                    android:padding="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

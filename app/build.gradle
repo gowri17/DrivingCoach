@@ -1,0 +1,157 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.22.0'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+        mavenCentral()
+    }
+    maven { url 'https://maven.fabric.io/public' }
+    jcenter()
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+//        applicationId "com.drava.android"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 5       /* 1*/ /*11*/   /*4*/
+        versionName "1.1"    /*versionName "1.20"*/     /*"1.1"*/   /*1.8*/
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("/keystores/debug.keystore")
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+        googlePlayRelease {
+            storeFile file('/keystores/dravaKey.jks')
+            keyAlias 'dravakey_alias'
+            keyPassword 'drava_alias'
+            storePassword 'drava_'
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            debuggable true
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "false")
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.debug
+        }
+
+        debug_false {
+            minifyEnabled false
+            debuggable true
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.debug
+        }
+
+        crashlytics {
+            minifyEnabled false
+            debuggable false
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "ENABLE_CRASHLYTICS", "true")
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.googlePlayRelease
+        }
+    }
+
+    productFlavors{
+        customer_version{
+            applicationId "com.sdc.coachingcenter.android"
+            buildConfigField "boolean", "IS_CUSTOMER_VERSION", "true"
+            resValue "string", "authority", "com.facebook.app.FacebookContentProvider1788211811499484"
+            versionCode 5
+            versionName "1.0"
+        }
+
+        public_version{
+            applicationId "com.drava.android"
+            buildConfigField "boolean", "IS_CUSTOMER_VERSION", "false"
+            resValue "string", "authority", "com.facebook.app.FacebookContentProvider208730906259599"
+            versionCode 13
+            versionName "1.1"
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile('com.twitter.sdk.android:twitter:1.13.1@aar') {
+        transitive = true;
+        exclude group: 'com.zendesk',
+                module: 'sdk-providers'
+    }
+    compile files('libs/libphonenumber-5.3.jar')
+    compile project(':linkedin-sdk')
+    compile files('libs/java-json.jar')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-jackson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.google.android.gms:play-services-maps:10.2.0'
+    compile 'com.google.android.gms:play-services-location:10.2.0'
+    compile 'com.google.android.gms:play-services-plus:10.2.0'
+    compile 'com.google.android.gms:play-services-auth:10.2.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+//    compile 'com.google.maps.android:android-maps-utils:0.4.+'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.facebook.android:facebook-android-sdk:4.18.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.android.support:cardview-v7:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+    compile 'com.google.android.gms:play-services-gcm:10.2.0'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3'
+    compile 'com.google.maps:google-maps-services:0.1.17'
+    compile 'com.android.support:customtabs:25.2.0'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

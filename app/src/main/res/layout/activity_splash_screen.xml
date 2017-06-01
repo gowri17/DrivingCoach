@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/light_grey">
+
+        <!--<ImageView
+            android:id="@+id/img_drava"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_drava"/>-->
+
+    <ImageView
+        android:id="@+id/img_drava"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_drava"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_poweredby"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="@color/white_transperant">
+
+        <TextView
+            android:id="@+id/txt_poweredby"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="@string/str_powered_by"
+            android:textColor="@color/color_black"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_drava_powered"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_poweredby"/>
+
+    </RelativeLayout>
+</RelativeLayout>

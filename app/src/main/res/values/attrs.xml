@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--TextView, EditText, Button stylea-->
+    <declare-styleable name="FontTypeface">
+        <attr name="typeface" format="integer">
+            <enum name="roboto_regular" value="0x0" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SpeedometerView">
+        <attr name="maxSpeed" format="float" />
+        <attr name="speed" format="float"/>
+        <attr name="labelTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@drawable/mail"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.drava.android.ui.DravaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/str_invitation_sent"
+        android:textColor="@color/color_black_text"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <com.drava.android.ui.DravaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_light_text"
+        android:textSize="16sp"
+        android:id="@+id/txt_invite_popup" />
+
+    <com.drava.android.ui.DravaTextView
+        android:id="@+id/txt_ok"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:text="@string/str_ok_gotit"
+        android:textColor="@color/color_theme"
+        android:textSize="14sp"
+        android:padding="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03adc8</color>
+    <!--<color name="colorPrimaryDark">#00695c</color>-->
+    <color name="colorPrimaryDark">#03adc8</color>
+    <!--<color name="colorAccent">#00695c</color>-->
+    <color name="colorAccent">#03adc8</color>
+    <color name="light_grey">#e0f2f1</color>
+    <color name="color_bg">#d5fdb7</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transperant">#ccffffff</color>
+    <color name="edit_text_bg_color">#dee0e2</color>
+    <color name="text_dark_color">#636669</color>
+    <color name="hint_color">#d4d5d6</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_black_text">#262626</color>
+    <color name="color_light_text">#5e5e5e</color>
+    <color name="color_gray_light_text">#b8b8b8</color>
+    <color name="color_gray_light_bg">#E3E3E3</color>
+    <color name="color_status_bar">#dee0e2</color>
+    <color name="color_light_grey_line">#F0F0F6</color>
+    
+    <color name="fb_color">#3948AB</color>
+    <color name="google_plus_color">#D74314</color>
+    <color name="twitter_color">#42A4F5</color>
+    <color name="instagram_st_color">#B33778</color>
+    <color name="instagram_en_color">#D08243</color>
+    <color name="color_light_green">#9FD375</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_theme">#00ACC6</color>
+
+    <color name="drawer_item_bg_selected">#b8b8b8</color>
+    <color name="drawer_item_bg_pressed">#636669</color>
+
+    <!--<color name="colorPrimary">#ffffff</color>-->
+    <!--<color name="colorPrimaryDark">#dee0e2</color>-->
+    <!--<color name="colorAccent">#26a69a</color>-->
+    <!--<color name="light_grey">#e0f2f1</color>-->
+    <!--<color name="color_bg">#d5fdb7</color>-->
+    <!--<color name="white">#ffffff</color>-->
+    <!--<color name="edit_text_bg_color">#dee0e2</color>-->
+    <!--<color name="text_dark_color">#636669</color>-->
+    <!--<color name="hint_color">#d4d5d6</color>-->
+    <color name="theme_color">#03ADC8</color>
+    <color name="congratulation_color">#FF9151</color>
+    <color name="light_theme_color">#4D03ADC8</color>
+    <color name="group_header_color">#B303ADC8</color>
+    <color name="child_text_color">#454545</color>
+    <color name="header_text_color">#656565</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name ="color_light_blue">#03A9F4</color>
+    <color name="header_bg">#F3F3F3</color>
+    <color name="notificationdividercolor">#D4D4D4</color>
+    <color name="notification_color">#A6A6A6</color>
+    <color name="settings_text_color">#767676</color>
+
+    <color name="txtgrey">#A5A5A5</color>
+    <color name="borderline">#dee0e2</color>
+    <color name="headerbg">#CCD3EBF0</color>
+    <color name="color_terms">#005EBF</color>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<com.drava.android.ui.DravaTextView-->
+    <!--android:id="@+id/txt_child_desc"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Lorem Ipsum is simply dummy text of the printing"-->
+    <!--android:textColor="@color/header_text_color"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="7dp"-->
+    <!--android:textSize="10sp"-->
+    <!--app:typeface="roboto_regular"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="2"
+        android:background="@color/light_theme_color">
+
+        <LinearLayout
+            android:id="@+id/ll_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/child_selector">
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/view_profile"/>
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_profile"
+                android:textColor="@color/child_text_color"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:layout_marginTop="7dp"
+                app:typeface="roboto_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_view_trips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/child_selector">
+            <ImageView
+                android:id="@+id/img_view_trips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/view_trips" />
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_view_trips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_trips"
+                android:textAllCaps="true"
+                android:textSize="8sp"
+                android:textColor="@color/child_text_color"
+                android:layout_marginTop="7dp"
+                app:typeface="roboto_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_view_on_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/child_selector">
+            <ImageView
+                android:id="@+id/img_view_on_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/view_map"/>
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_view_on_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_on_maps"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:textColor="@color/child_text_color"
+                android:layout_marginTop="7dp"
+                app:typeface="roboto_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/child_selector">
+            <ImageView
+                android:id="@+id/img_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove"/>
+
+            <com.drava.android.ui.DravaTextView
+                android:id="@+id/txt_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remove_mentee"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="8sp"
+                android:textColor="@color/child_text_color"
+                android:layout_marginTop="7dp"
+                app:typeface="roboto_regular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
